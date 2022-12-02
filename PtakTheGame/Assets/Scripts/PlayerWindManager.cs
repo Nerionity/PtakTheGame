@@ -8,7 +8,7 @@ public class PlayerWindManager : MonoBehaviour
      {
          if (other.gameObject.tag == "Wind")
          {
-             Destroy(other.gameObject);
+             GlobalVariables.Instance.playerState = "Wind";
          }
      }
 }
