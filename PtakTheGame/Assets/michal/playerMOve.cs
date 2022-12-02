@@ -1,9 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
-
 public class playerMOve : MonoBehaviour
 {
     public GameObject player;
@@ -37,10 +34,6 @@ public class playerMOve : MonoBehaviour
             speed = 0;
             transform.localRotation = Quaternion.Euler(0, move.x, 0);
             
-   
-
-
-
         }
         
 
