@@ -23,8 +23,10 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             if(instance == null){
                 instance = (T) FindObjectOfType(typeof(T));
 
-                if(instance == null) Debug.LogError("Instance of a " + typeof(T));
+                if(instance == null) Debug.LogError("Instance of a " + typeof(T) + "does not exist");
             }
+
+            return instance;
         }
     }
 }

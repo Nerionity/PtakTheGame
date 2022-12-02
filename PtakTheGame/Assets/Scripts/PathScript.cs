@@ -11,8 +11,10 @@ public class PathScript : MonoBehaviour
 
     void Update()
     {
+        if(GlobalVariables.Instance.playerState == "Wind"){
         distanceTravelled += speed + Time.deltaTime;
         transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled);
         transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled);
+        }
     }
 }
