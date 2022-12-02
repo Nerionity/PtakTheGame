@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 1315814102}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -300,6 +300,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 681654184416958925, guid: 5bf6829dd9a250a49a34707cd73dd7f8, type: 3}
@@ -355,6 +356,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8873015413841427117}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bf6829dd9a250a49a34707cd73dd7f8, type: 3}
 --- !u!1 &8873015413841427117 stripped
 GameObject:
