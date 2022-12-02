@@ -34,13 +34,6 @@ public class playerMOve : MonoBehaviour
             speed = 0;
             transform.localRotation = Quaternion.Euler(0, move.x, 0);
             
-<<<<<<< Updated upstream
-=======
-        
-
-
-
->>>>>>> Stashed changes
         }
         
 
