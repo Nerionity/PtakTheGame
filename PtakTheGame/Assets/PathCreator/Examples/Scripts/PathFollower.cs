@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 namespace PathCreation.Examples
 {
@@ -31,6 +32,7 @@ namespace PathCreation.Examples
                 // Subscribed to the pathUpdated event so that we're notified if the path changes during the game
                 pathCreator.pathUpdated += OnPathChanged;
             }
+
         }
 
 
@@ -56,6 +58,7 @@ namespace PathCreation.Examples
                         GlobalVariables.Instance.playerState = "FirstFly";
                         distanceTravelled = 0;
                         savedRotation = transform.rotation;
+                        transform.DORotate(new Vector3(90, 0, 0), 1);
                 }
             }
             if (pathCreator2 != null &&  GlobalVariables.Instance.playerState == "FirstFly")
@@ -64,7 +67,7 @@ namespace PathCreation.Examples
                 transform.position = pathCreator2.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
                // transform.rotation = Quaternion.Lerp( Quaternion.Euler(new Vector3(savedRotation.x,savedRotation.y,savedRotation.z)), Quaternion.Euler(new Vector3(savedRotation.x,savedRotation.y,savedRotation.z)), distanceTravelled);
                
-                //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(savedRotation.x, savedRotation.y, 0), speed * Time.deltaTime);
+                
                 transform.rotation = savedRotation;
                 if(pathCreator2.path.GetClosestTimeOnPath(pathCreator2.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction)) == 1){
                     //player.FirstFly(pathCreator.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction));
