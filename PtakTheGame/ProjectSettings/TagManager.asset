@@ -6,10 +6,6 @@ TagManager:
   tags:
   - terrain
   - Wind
-  - karmnik
-  - karmnik2
-  - karmnik3
-  - border
   layers:
   - Default
   - TransparentFX
