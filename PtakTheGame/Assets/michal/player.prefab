@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8867033192786438380}
   - component: {fileID: 3873245947715711647}
   - component: {fileID: 3131900388779242617}
+  - component: {fileID: 5520557690277413266}
+  - component: {fileID: 7036667738442726897}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -116,6 +118,7 @@ MonoBehaviour:
   move: {x: 0, y: 0, z: 0}
   speed: 0
   rb: {fileID: 3131900388779242617}
+  flying: 0
 --- !u!54 &3131900388779242617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -132,6 +135,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5520557690277413266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681654184416958925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathCreator: {fileID: 0}
+  endOfPathInstruction: 0
+  speed: 5
+--- !u!114 &7036667738442726897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681654184416958925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7fa3232e8e256446ba0f73ac569e329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8239036860411186705
 GameObject:
   m_ObjectHideFlags: 0

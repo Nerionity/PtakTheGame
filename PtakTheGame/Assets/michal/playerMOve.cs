@@ -19,13 +19,15 @@ public class playerMOve : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        move.x += Input.GetAxis("Mouse X");
-        move.y += Input.GetAxis("Mouse Y");
-        playerRotationX = this.transform.localRotation.eulerAngles.x;
-        if (playerRotationX > 180f)
-        {
-            playerRotationX = playerRotationX - 360f;
-        }
+        if(GlobalVariables.Instance.playerState == "Fly"){
+            move.x += Input.GetAxis("Mouse X");
+            move.y += Input.GetAxis("Mouse Y");
+        
+            playerRotationX = this.transform.localRotation.eulerAngles.x;
+            if (playerRotationX > 180f)
+            {
+                playerRotationX = playerRotationX - 360f;
+            }
 
 
         if (flying == false)
@@ -44,6 +46,7 @@ public class playerMOve : MonoBehaviour
             { speed = 10 + (playerRotationX / 9); }
             else { speed = 10 + (playerRotationX / 9); }
             rb.velocity = transform.forward * speed;
+        }
         }
     }
 
