@@ -5,4 +5,7 @@ using UnityEngine;
 public class GlobalVariables : Singleton<GlobalVariables> 
 {
    public string playerState = "Fly";
+ 
 }
+
+
