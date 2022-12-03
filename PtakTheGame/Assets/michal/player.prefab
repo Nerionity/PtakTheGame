@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7029552317469152198}
   - component: {fileID: 931178030206412504}
   - component: {fileID: 8867033192786438380}
-  - component: {fileID: 3873245947715711647}
   - component: {fileID: 3131900388779242617}
   - component: {fileID: 5520557690277413266}
   - component: {fileID: 7036667738442726897}
@@ -102,23 +101,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3873245947715711647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681654184416958925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f1c85ffe44406441b90d0f9c3ce589c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  move: {x: 0, y: 0, z: 0}
-  speed: 0
-  rb: {fileID: 3131900388779242617}
-  flying: 0
 --- !u!54 &3131900388779242617
 Rigidbody:
   m_ObjectHideFlags: 0
