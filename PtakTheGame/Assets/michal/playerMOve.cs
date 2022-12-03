@@ -18,7 +18,7 @@ public class playerMOve : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
         if(GlobalVariables.Instance.playerState == "Fly"){
             move.x += Input.GetAxis("Mouse X");
             move.y += Input.GetAxis("Mouse Y");
@@ -29,6 +29,7 @@ public class playerMOve : MonoBehaviour
                 playerRotationX = playerRotationX - 360f;
             }
 
+            
 
         if (flying == false)
         {
