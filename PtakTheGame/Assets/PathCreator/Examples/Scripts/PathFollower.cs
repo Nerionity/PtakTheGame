@@ -13,7 +13,7 @@ namespace PathCreation.Examples
         public PathCreator pathCreator;
         public PathCreator pathCreator2;
         public EndOfPathInstruction endOfPathInstruction;
-        public float speed = 5;
+        public float speed = 20;
         float distanceTravelled;
         Quaternion savedRotation;
 
@@ -58,7 +58,7 @@ namespace PathCreation.Examples
                 if(pathCreator.path.GetClosestTimeOnPath(pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction)) == 1){
                     //player.FirstFly(pathCreator.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction));
                         GlobalVariables.Instance.playerState = "FirstFly";
-                        distanceTravelled = 0;d
+                        distanceTravelled = 0;
                         savedRotation = transform.rotation;
                         transform.DORotate(new Vector3(savedRotation.x, savedRotation.y, 0), 1);
                 }
@@ -75,7 +75,7 @@ namespace PathCreation.Examples
                 if(pathCreator2.path.GetClosestTimeOnPath(pathCreator2.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction)) == 1){
                     //player.FirstFly(pathCreator.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction));
                          GlobalVariables.Instance.playerState = "Fly";
-                         playerAnim.Play("Base Layer.Amature|lot", -1,float.NegativeInfinity);
+                         playerAnim.Play("Base Layer.Armature|lot", -1,float.NegativeInfinity);
                          player.move.x = transform.rotation.x;
                          player.move.y = transform.rotation.y;
 
