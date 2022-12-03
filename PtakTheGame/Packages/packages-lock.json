@@ -1,11 +1,7 @@
 {
   "dependencies": {
     "com.unity.collab-proxy": {
-<<<<<<< Updated upstream
-      "version": "1.17.7",
-=======
       "version": "1.17.1",
->>>>>>> Stashed changes
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -21,11 +17,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-<<<<<<< Updated upstream
-      "version": "3.0.16",
-=======
       "version": "3.0.15",
->>>>>>> Stashed changes
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -57,11 +49,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
-<<<<<<< Updated upstream
       "version": "1.6.0",
-=======
-      "version": "1.4.2",
->>>>>>> Stashed changes
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -92,11 +80,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-<<<<<<< Updated upstream
-      "version": "1.6.4",
-=======
       "version": "1.7.1",
->>>>>>> Stashed changes
       "depth": 0,
       "source": "registry",
       "dependencies": {
