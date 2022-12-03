@@ -58,7 +58,7 @@ namespace PathCreation.Examples
                         GlobalVariables.Instance.playerState = "FirstFly";
                         distanceTravelled = 0;
                         savedRotation = transform.rotation;
-                        transform.DORotate(new Vector3(90, 0, 0), 1);
+                        transform.DORotate(new Vector3(savedRotation.x, savedRotation.y, 0), 1);
                 }
             }
             if (pathCreator2 != null &&  GlobalVariables.Instance.playerState == "FirstFly")
