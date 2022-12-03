@@ -6,7 +6,7 @@ public class playerMOve : MonoBehaviour
     public GameObject player;
     public Vector3 move;
     public float secondFlySpeed;
-    public float speed = 10;
+    public float speed = 50;
     public Rigidbody rb;
     private float playerRotationX;
     public bool flying;
@@ -44,8 +44,8 @@ public class playerMOve : MonoBehaviour
             {
                 transform.localRotation = Quaternion.Euler(move.y, move.x, 0);
                 if (playerRotationX < 0)
-                { speed = 10 + (playerRotationX / 9); }
-                else { speed = 10 + (playerRotationX / 9); }
+                { speed = 50 + (playerRotationX / 9); }
+                else { speed = 50 + (playerRotationX / 9); }
 
                 if(GlobalVariables.Instance.playerState == "SecondFly"){
                     rb.velocity = transform.forward * secondFlySpeed;
